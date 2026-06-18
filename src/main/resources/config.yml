@@ -1,0 +1,48 @@
+# Интервал обновления шахты (в секундах)
+refill-interval: 300
+
+# Установлен ли регион (true после первого /kapymine wand)
+mine-region-set: false
+
+# Мир шахты
+mine-world: world
+
+# Координаты шахты (устанавливаются командой /kapymine wand)
+mine-pos1:
+  x: 0
+  y: 64
+  z: 0
+mine-pos2:
+  x: 10
+  y: 70
+  z: 10
+
+# Типы шахт. Сумма chance не должна превышать 100.
+# Блоки: material:chance, сумма chance блоков не должна превышать 100 (остаток - камень).
+mine-types:
+  - name: "&aЖелезная шахта"
+    chance: 50
+    blocks:
+      - iron_ore:10
+      - diamond_ore:5
+      - gold_ore:10
+      - redstone_ore:15
+      - coal_ore:20
+      - stone:30
+      - cobblestone:10
+
+  - name: "&bЗолотая шахта"
+    chance: 30
+    blocks:
+      - gold_ore:35
+      - iron_ore:25
+      - gravel:20
+
+  - name: "&dАлмазная шахта"
+    chance: 20
+    blocks:
+      - diamond_ore:15
+      - gold_ore:25
+      - iron_ore:30
+      - deepslate:20
+

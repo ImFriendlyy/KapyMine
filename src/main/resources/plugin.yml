@@ -1,0 +1,20 @@
+name: KapyMine
+version: '1.0'
+main: vv0ta3fa9.plugin.kapyMine.KapyMine
+api-version: '1.21'
+authors: [ vv0t3efa9 ]
+website: t.me/kapybarkaaa
+softdepend: [ PlaceholderAPI ]
+commands:
+  kapymine:
+    description: Главная команда автошахты
+    usage: /kapymine [reload|refuse|wand]
+    aliases: [ mine, kmine, km ]
+    permission: kapymine.use
+permissions:
+  kapymine.use:
+    description: Доступ к командам плагина
+    default: op
+  kapymine.wand:
+    description: Доступ к палке редактора
+    default: op
